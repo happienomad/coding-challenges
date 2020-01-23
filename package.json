@@ -1,0 +1,37 @@
+{
+  "name": "ts-code-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "jest": "24.1.0",
+    "react": "16.8.3",
+    "ts-jest": "24.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.9",
+    "@types/react": "16.8.6",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": [],
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "isolatedModules": true,
+        "tsConfig": {
+          "esModuleInterop": true
+        }
+      }
+    },
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+    "transform": {
+      ".(ts|tsx|esm)": "ts-jest"
+    },
+    "modulePaths": ["src/"],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$"
+  }
+}
